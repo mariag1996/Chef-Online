@@ -1,0 +1,161 @@
+/*Estilo Menú */
+
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        position: relative;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    }
+
+.menu-button {
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(233, 106, 22);
+    margin: 6px 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: left;
+    top: 100%; 
+    left: 0;
+    background-color: #f38d52;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 2;
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+}
+
+.dropdown-menu a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ffffff;
+}
+
+
+img {
+    border: 0;
+}
+
+
+/*Estilo Título*/
+
+  h1 {
+    text-align:center;
+    font-weight:bolder;
+    font-size:40px;
+    letter-spacing:2px;
+    color: #0f0258;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.transicion {
+    transition: all 0.3s ease;
+}
+
+.transicion:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+  .icono {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* Alineación vertical */
+    margin-right: 5px; /* Espacio entre icono y texto */
+}
+  
+
+/*Estilo Tarjetas*/
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    color:#333;
+}
+
+.contenedor {
+    display:flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.tarjeta {
+    background-size: cover; /* Ajusta la imagen al tamaño de la tarjeta */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1; /* Permite que las tarjetas se expandan igualmente */
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px) scale(1.05); /* Aumento de tamaño al pasar el mouse */
+    background: linear-gradient(to right, #eed1ca, #fafafa); /* Color de fondo al pasar el mouse (gradiente) */ 
+}
+
+.tarjeta img {
+    width: "400";
+    height: "310";
+    object-fit: cover; /* O bien 'contain' si prefieres mantener la imagen completa */
+}
+
+/*Estilo Botón*/
+
+.boton {
+    background-color:#333; /* Color del botón */
+    color:#f38d52; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+
+}
+
+.boton:hover {
+    background-color:#d36729; /* Cambiar el color del botón */
+  color: #333;
+}
+
+.logo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
